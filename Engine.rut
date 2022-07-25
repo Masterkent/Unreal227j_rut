@@ -1,0 +1,344 @@
+﻿[Public]
+Object=(Name=Engine.Console,Class=Class,MetaClass=Engine.Console)
+Object=(Name=Engine.ServerCommandlet,Class=Class,MetaClass=Core.Commandlet)
+Object=(Name=Engine.LinkerUpdateCommandlet,Class=Class,MetaClass=Core.Commandlet)
+Object=(Name=Engine.SHAUpdateCommandlet,Class=Class,MetaClass=Core.Commandlet)
+; Main roots
+Preferences=(Caption="Advanced",Parent="Advanced Options",LangCaption="Дополнительно")
+Preferences=(Caption="Rendering",Parent="Advanced Options",LangCaption="Рендеринг")
+Preferences=(Caption="Audio",Parent="Advanced Options",LangCaption="Аудио")
+Preferences=(Caption="Networking",Parent="Advanced Options",LangCaption="Сеть")
+Preferences=(Caption="Game Types",Parent="Advanced Options",LangCaption="Типы игр")
+Preferences=(Caption="Display",Parent="Advanced Options",LangCaption="Отображение")
+Preferences=(Caption="Joystick",Parent="Advanced Options",LangCaption="Джойстик")
+Preferences=(Caption="Drivers",Parent="Advanced Options",LangCaption="Подсистемы",Class=Engine.Engine,Immediate=False,Category=Drivers)
+Preferences=(Caption="Game Settings",Parent="Advanced Options",LangCaption="Настройки игры",Class=Engine.GameInfo,Immediate=True)
+Preferences=(Caption="Decals",Parent="Advanced Options",LangCaption="Декали")
+; Advanced
+Preferences=(Caption="Game Engine Settings",Parent="Advanced",LangCaption="Настройки движка игры",Class=Engine.GameEngine,Category=Settings,Immediate=True)
+Preferences=(Caption="Key Aliases",Parent="Advanced",LangCaption="Назначения команд ввода",Class=Engine.Input,Immediate=True,Category=Aliases)
+Preferences=(Caption="Raw Key Bindings",Parent="Advanced",LangCaption="Назначения клавиш",Class=Engine.Input,Immediate=True,Category=RawKeys)
+; Networking
+Preferences=(Caption="Public Server Information",Parent="Networking",LangCaption="Информация о сервере",Class=Engine.GameReplicationInfo,Immediate=True)
+Preferences=(Caption="Channel Download",Parent="Networking",LangCaption="Отправка файлов",Class=Engine.ChannelDownload)
+Preferences=(Caption="Connection Notifications",Parent="Networking",LangCaption="Соединения с клиентами",Class=Engine.Gameinfo,Category=Networking,Immediate=True)
+Preferences=(Caption="Map Lists",Parent="Networking",LangCaption="Списки карт")
+; Decals
+Preferences=(Caption="Blood",Parent="Decals",LangCaption="Кровь")
+Preferences=(Caption="Pawn Shadow",Parent="Decals",LangCaption="Тени персонажей",Class=Engine.PawnShadow,Immediate=True)
+Preferences=(Caption="Decoration Shadow",Parent="Decals",LangCaption="Тени декораций",Class=Engine.DecoShadow,Immediate=True)
+Preferences=(Caption="Projectile Shadow",Parent="Decals",LangCaption="Тени снарядов",Class=Engine.ProjectileShadow,Immediate=True)
+; Blood
+Preferences=(Caption="Server",Parent="Blood",LangCaption="Сервер",Class=Engine.GameInfo,Category=BloodServer,Immediate=True)
+
+[PlayerPawn]
+; EN: QuickSaveString="Quick Saving"
+QuickSaveString="Быстрое сохранение"
+; EN: NoPauseMessage="Game is not pauseable"
+NoPauseMessage="Игру нельзя поставить на паузу"
+; EN: ViewingFrom="Now viewing from "
+ViewingFrom="Обзор с "
+; EN: OwnCamera="own camera"
+OwnCamera="собственной камеры"
+; EN: FailedView="Failed to change view."
+FailedView="Не удалось сменить обзор."
+; EN: CantChangeNameMsg="You can't change your name during a global logged game."
+CantChangeNameMsg="Нельзя менять своё имя во время игры с ведением глобальных логов."
+
+[Pawn]
+; EN: NameArticle=" a "
+NameArticle=" "
+
+[Inventory]
+; EN: PickupMessage="Snagged an item"
+PickupMessage="Подобран предмет"
+; EN: ItemArticle="a"
+ItemArticle=""
+; EN: M_Activated=" activated."
+M_Activated=" - предмет активирован."
+; EN: M_Selected=" selected."
+M_Selected=" - предмет выбран."
+; EN: M_Deactivated=" deactivated."
+M_Deactivated=" - предмет деактивирован."
+
+[LevelInfo]
+; EN: Title="Untitled"
+Title="Безымянный"
+
+[Weapon]
+; EN: MessageNoAmmo=" has no ammo."
+MessageNoAmmo=" - боезапас исчерпан."
+; EN: DeathMessage="%o was killed by %k's %w."
+DeathMessage="%o был убит %k из %w."
+FemDeathMessage="%o была убита %k из %w."
+; Когда FemKillMessage не задано, используется FemDeathMessage 
+FemKillMessage=""
+; EN: PickupMessage="You got a weapon"
+PickupMessage="Вы получили оружие"
+; EN: ItemName="Weapon"
+ItemName="Оружие"
+
+[Ammo]
+; EN: PickupMessage="You picked up some ammo"
+PickupMessage="Вы подобрали боеприпасы"
+; EN: ItemName="Ammo"
+ItemName="Боеприпасы"
+
+[Counter]
+; EN: CountMessage="Only %i more to go..."
+CountMessage="Осталось ещё %i для продолжения..."
+; EN: CompleteMessage="Completed!"
+CompleteMessage="Всё!"
+
+[Spectator]
+; EN: MenuName="Spectator"
+MenuName="Зритель"
+
+[DamageType]
+; EN: Name="killed"
+Name="настигла гибель"
+; EN: AltName="killed"
+AltName="настигла гибель"
+
+[Progress]
+; EN: CancelledConnect="Cancelled Connect Attempt"
+CancelledConnect="Попытка соединения отменена"
+; EN: RunningNet="%ls: %ls (%i players)"
+RunningNet="%ls: %ls (%i игроков)"
+; EN: NetReceiving="Receiving %ls: %i/%i"
+NetReceiving="Скачивается %ls: %i/%i"
+; EN: NetReceiveOk="Successfully received %ls"
+NetReceiveOk="Скачивание %ls успешно завершено"
+; EN: NetSend="Sending %ls"
+NetSend="Отправка %ls"
+; EN: NetSending="Sending %ls: %i/%i"
+NetSending="Отправка %ls: %i/%i"
+; EN: Connecting="Connecting..."
+Connecting="Соединение..."
+; EN: Listening="Listening for clients..."
+Listening="Прослушивание клиентов..."
+; EN: Loading="Loading"
+Loading="Загрузка"
+; EN: Saving="Saving"
+Saving="Сохранение"
+; EN: Paused="Paused by %ls"
+Paused="Поставлено на паузу %ls"
+; EN: ReceiveFile="Receiving %ls (F10 Cancels)"
+ReceiveFile="Скачивается файл %ls (F10 для отмены)"
+; EN: ReceiveOptionalFile="Receiving optional file %ls (Press F10 to Skip)"
+ReceiveOptionalFile="Скачивается необязательный файл %ls (нажмите F10, чтобы пропустить)"
+; EN: ReceiveSize="Size %iK, Complete %3.1f%% = %iK, %i Packages remaining"
+ReceiveSize="Размер: %iK, скачано: %3.1f%% = %iK, осталось пакетов: %i"
+; EN: ConnectingText="Connecting (F10 Cancels):"
+ConnectingText="Присоединение (F10 для отмены):"
+ConnectingURL="unreal://%ls/%ls"
+
+[WarpZoneInfo]
+OtherSideURL=""
+
+[Pickup]
+ExpireMessage=""
+
+[SpecialEvent]
+DamageString=""
+
+[ServerCommandlet]
+HelpCmd=server
+HelpWebLink="https://www.oldunreal.com/wiki/index.php?title=Commandlet"
+; EN: HelpOneLiner="Network game server."
+HelpOneLiner="Сервер для сетевой игры."
+; EN: HelpUsage="server map.unr[?game=gametype] [-option...] [parm=value]..."
+HelpUsage="server map.unr[?game=gametype] [-option...] [parm=value] ..."
+HelpParm[0]="Log"
+; EN: HelpDesc[0]="Specify the log file to generate."
+HelpDesc[0]="Имя серверного log-файла."
+HelpParm[1]="AllAdmin"
+; EN: HelpDesc[1]="Give all players admin privileges."
+HelpDesc[1]="Дать всем игрокам админские права."
+
+[Console]
+; EN: ClassCaption="Standard Unreal Console"
+ClassCaption="Простая консоль Unreal"
+; EN: LoadingMessage="LOADING"
+LoadingMessage="ЗАГРУЗКА"
+; EN: SavingMessage="SAVING"
+SavingMessage="СОХРАНЕНИЕ"
+; EN: ConnectingMessage="CONNECTING"
+ConnectingMessage="СОЕДИНЕНИЕ"
+; EN: PausedMessage="PAUSED"
+PausedMessage="ПАУЗА"
+; EN: PrecachingMessage="PRECACHING"
+PrecachingMessage="ПРЕКЕШИРОВАНИЕ"
+; EN: ChatChannel="(CHAT) "
+ChatChannel="(ЧАТ) "
+; EN: TeamChannel="(TEAM) "
+TeamChannel="(КОМАНДА) "
+
+[Menu]
+MenuList=" "
+HelpMessage=" "
+; EN: HelpMessage[1]="This menu has not yet been implemented."
+HelpMessage[1]="Это меню ещё не реализовано."
+; EN: LeftString="Left"
+LeftString="Cлева"
+; EN: RightString="Right"
+RightString="Справа"
+; EN: CenterString="Center"
+CenterString="По центру"
+; EN: EnabledString="Enabled"
+EnabledString="Включено"
+; EN: DisabledString="Disabled"
+DisabledString="Выключено"
+; EN: YesString="Yes"
+YesString="да"
+; EN: NoString="No"
+NoString="нет"
+; EN: OnString="On"
+OnString="да"
+; EN: OffString="Off"
+OffString="нет"
+
+[GameInfo]
+; EN: SwitchLevelMessage="Switching Levels"
+SwitchLevelMessage="Смена уровней"
+DefaultPlayerName="Player"
+; EN: LeftMessage=" left the game."
+LeftMessage=" покинул игру."
+FemLeftMessage=" покинула игру."
+; EN: FailedSpawnMessage="Failed to spawn player actor"
+FailedSpawnMessage="Не удалось создать актор игрока"
+; EN: FailedPlaceMessage="Could not find starting spot (level might need a "PlayerStart" actor)"
+FailedPlaceMessage="Не удалось найти место для исходного размещения игрока (уровню нужен актор "PlayerStart")"
+; EN: FailedTeamMessage="Could not find team for player"
+FailedTeamMessage="Не удалось найти команду для игрока"
+; EN: NameChangedMessage="Name changed to "
+NameChangedMessage="Имя изменено на "
+; EN: EnteredMessage=" entered the game."
+EnteredMessage=" присоединился к игре."
+FemEnteredMessage=" присоединилась к игре."
+; EN: GameName="Game"
+GameName="Игра"
+; EN: MaxedOutMessage="Server is already at capacity."
+MaxedOutMessage="На сервере больше нет места для новых игроков."
+; EN: WrongPassword="The password you entered is incorrect."
+WrongPassword="Введённый вами пароль недействителен."
+; EN: NeedPassword="You need to enter a password to join this game."
+NeedPassword="Для входа на данный сервер требуется ввести пароль."
+; EN: MaleGender="his"
+MaleGender="его"
+; EN: FemaleGender="her"
+FemaleGender="её"
+; EN: MaxedOutSpectatorsMsg="Max spectators exceeded"
+MaxedOutSpectatorsMsg="На сервере нет места для новых зрителей"
+
+[Errors]
+; EN: NetOpen="Error opening file"
+NetOpen="Ошибка открытия файла"
+; EN: NetWrite="Error writing to file"
+NetWrite="Ошибка записи в файл"
+; EN: NetRefused="Server refused to send %ls"
+NetRefused="Сервер не может отправить %ls"
+; EN: NetClose="Error closing file"
+NetClose="Ошибка закрытия файла"
+; EN: NetSize="File size mismatch"
+NetSize="Несоответствие размера файла"
+; EN: NetMove="Error moving file"
+NetMove="Ошибка перемещения файла"
+; EN: NetInvalid="Received invalid file request"
+NetInvalid="Получен некорректный запрос файла"
+; EN: NoDownload="Package %ls is not downloadable"
+NoDownload="Пакет %ls недоступен для скачивания"
+; EN: DownloadFailed="Downloading package %ls failed: %ls"
+DownloadFailed="Не удалось скачать пакет %ls: %ls"
+; EN: RequestDenied="Server requested file from pending level: Denied"
+RequestDenied="Сервер запросил файл для ещё незагруженного уровня - запрос отклонён"
+; EN: ConnectionFailed="Connection failed"
+ConnectionFailed="Нет соединения с сервером"
+; EN: ChAllocate="Couldn't allocate channel"
+ChAllocate="Не удалось выделить канал"
+; EN: NetAlready="Already networking"
+NetAlready="Соединение уже установлено"
+; EN: NetListen="Listen failed: No linker context available"
+; Бесполезно переводить это сообщение: чтобы понять его смысл, надо или быть гуру (которому перевод наверняка не нужен) или гуглить текст ошибки - а это проще делать с англоязычной формулировкой.
+NetListen="Listen failed: No linker context available"
+; EN: LoadEntry="Can't load Entry: %ls"
+LoadEntry="Не удалось загрузить Entry: %ls"
+; EN: InvalidUrl="Invalid URL: %ls"
+InvalidUrl="Неверный URL: %ls"
+; EN: InvalidLink="Invalid Link: %ls"
+InvalidLink="Неверная ссылка: %ls"
+; EN: FailedBrowse="Failed to enter %ls: %ls"
+FailedBrowse="Не удалось открыть %ls: %ls"
+; EN: Listen="Listen failed: %ls"
+Listen="Прослушивание не удалась: %ls"
+; EN: AbortToEntry="Failed; returning to Entry"
+AbortToEntry="Ошибка; производится возврат на Entry"
+; EN: ServerOpen="Servers can't open network URLs"
+ServerOpen="Сервера не могут открывать сетевые URL"
+; EN: ServerListen="Dedicated server can't listen: %ls"
+ServerListen="Выделенный сервер не может быть в роли прослушивающего: %ls"
+; EN: Pending="Pending connect to %ls failed; %ls"
+Pending="Не удалось соединиться с %ls; %ls"
+; EN: LoadPlayerClass="Failed to load player class"
+LoadPlayerClass="Не удалось загрузить класс игрока"
+; EN: ServerOutdated="Server's version is outdated"
+ServerOutdated="Версия сервера устарела"
+; EN: Banned="You have been banned"
+Banned="Вы забанены"
+; EN: TempBanned="You have been temporarily banned"
+TempBanned="Вы временно забанены"
+; EN: Kicked="You have been kicked"
+Kicked="Вас удалили с сервера"
+
+[General]
+; EN: Upgrade="To enter this server, you need the latest free update to Unreal available from OldUnreals's Web site:"
+Upgrade="Чтобы зайти на этот сервер, вам нужно последнее бесплатное обновление Unreal с сайта Oldunreal:"
+UpgradeURL="https://www.oldunreal.com/oldunrealpatches.html"
+; EN: UpgradeQuestion="Do you want to launch your web browser and go to the upgrade page now?"
+UpgradeQuestion="Хотите запустить ваш веб-браузер и пройти на страницу обновлений прямо сейчас?"
+; EN: Version="Version %i"
+Version="Версия %i"
+
+[AdminAccessManager]
+; EN: AdminLoginText="Administrator %ls logged in"
+AdminLoginText="Пользователь %ls вошёл как администратор"
+; EN: AdminLogoutText="Administrator %ls logged out"
+AdminLogoutText="Администратор %ls сложил свои полномочия"
+; EN: CheatUsedStr="%ls used admin/cheat command: %c"
+CheatUsedStr="%ls использовал админскую/читерскую команду: %c"
+
+[Fonts]
+SmallFont=UniFonts.NewSmallFont
+WhiteFont=UniFonts.NewWhiteFont
+MedFont=UniFonts.NewMedFont
+LargeFont=UniFonts.NewLargeFont
+LargeGreenFont=UniFonts.NewLargeFont
+BigFont=UniFonts.NewMedFont
+
+[LinkerUpdateCommandlet]
+HelpCmd=linkerupdate
+HelpWebLink="https://www.oldunreal.com/wiki/index.php?title=Commandlet"
+; EN: HelpOneLiner="Adds all checksums of the files within the directory automatically to the file SHALinkerCache.ini. Used by the UnrealIntegrity anticheat."
+HelpOneLiner="Добавляет все контрольные суммы файлов в каталоге автоматически в файл SHALinkerCache.ini. Используется античитом UnrealIntegrity."
+; EN: HelpUsage="linkerupdate <filename>"
+HelpUsage="linkerupdate <filename>"
+; EN: HelpParm[0]="<filename>"
+HelpParm[0]="<filename>"
+; EN: HelpDesc[0]="The file to calculate the checksum for posterior storage."
+HelpDesc[0]="Имя файла, контрольная сумма которого будет вычислена и сохранена. Можно задавать шаблон имён."
+
+[SHAUpdateCommandlet]
+HelpCmd=shaupdate
+HelpWebLink="https://www.oldunreal.com/wiki/index.php?title=Commandlet"
+; EN: HelpOneLiner="Adds all SHA256 checksums of the files within the directory automatically to the file SHALinkerCache.ini. Used by the UnrealIntegrity anticheat."
+HelpOneLiner="Добавляет все контрольные суммы SHA256 файлов в каталоге автоматически в файл SHALinkerCache.ini. Используется античитом UnrealIntegrity."
+; EN: HelpUsage="shaupdate <filename>"
+HelpUsage="shaupdate <filename>"
+; EN: HelpParm[0]="<filename>"
+HelpParm[0]="<filename>"
+; EN: HelpDesc[0]="The file to calculate the SHA256 checksum for posterior storage."
+HelpDesc[0]="Имя файла, для которого будет вычислен и сохранён хэш SHA256. Можно задавать шаблон имён."
+
+[AutosaveTrigger]
+; EN: AutoSaveString="Auto Saving"
+AutoSaveString="Автосохранение"

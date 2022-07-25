@@ -1,0 +1,189 @@
+﻿[Public]
+Object=(Name=UBrowser.UBrowserConsole,Class=Class,MetaClass=Engine.Console,Description="UBrowser")
+Preferences=(Caption="UBrowser",Parent="Networking",LangCaption="UBrowser",Class=UBrowser.UBrowserMainClientWindow,Immediate=True)
+
+[UBrowserGSpyLink]
+; EN: ResolveFailedError="The master server could not be resolved: "
+ResolveFailedError="Не удалось определить IP-адрес мастер-сервера: "
+; EN: TimeOutError="Timeout talking to the master server"
+TimeOutError="Время ожидания связи с мастер-сервером истекло"
+; EN: CouldNotConnectError="Connecting to the master server timed out: "
+CouldNotConnectError="Время ожидания соединения с мастер-сервером истекло: "
+
+[UBrowserHTTPLink]
+; EN: ResolveFailedError="The master server could not be resolved: "
+ResolveFailedError="Не удалось определить IP-адрес мастер-сервера: "
+; EN: TimeOutError="Timeout talking to the master server"
+TimeOutError="Время ожидания связи с мастер-сервером истекло"
+; EN: CouldNotConnectError="Connecting to the master server timed out: "
+CouldNotConnectError="Время ожидания соединения с мастер-сервером истекло: "
+
+[UBrowserSubsetFact]
+; EN: NotFoundError="Could not find the window: "
+NotFoundError="Не удалось найти окно: "
+; EN: NotReadyError="Window is not ready: "
+NotReadyError="Окно не готово: "
+
+[UBrowserRulesGrid]
+; EN: RuleText="Rule"
+; // Только часть параметров, отображаемых в этом столбце, можно было бы назвать правилами.
+RuleText="Параметр"
+; EN: ValueText="Value"
+ValueText="Значение"
+
+[UBrowserServerListWindow]
+; EN: InfoName="Info"
+InfoName="Информация"
+; EN: PlayerCountName="Players"
+PlayerCountName="игроков"
+; EN: ServerCountName="Servers"
+ServerCountName="серверов"
+; EN: QueryServerText="Querying Master Server (hit F5 if nothing happens)"
+QueryServerText="Запрос данных с мастер-сервера (нажмите F5, если ничего не происходит)"
+; EN: QueryFailedText="Master Server Failed: "
+QueryFailedText="Не удалось получить данные от мастер-сервера: "
+; EN: PingingText="Pinging Servers"
+PingingText="Опрос серверов"
+; EN: CompleteText="Complete"
+CompleteText="завершено"
+
+[UBrowserServerPing]
+; // Знак табуляции в начале нужен для лучшей сортировки строк, чтобы сначала отображалась основная информация, а список мутаторов был в конце
+; EN: AdminEmailText="Admin Email"
+AdminEmailText="	E-mail админа"
+; EN: AdminNameText="Admin Name"
+AdminNameText="	Имя админа"
+; EN: ChangeLevelsText="Change Levels"
+ChangeLevelsText="	Смена уровней"
+; EN: MultiplayerBotsText="Bots in Multiplayer"
+MultiplayerBotsText="	Боты в сетевой игре"
+; EN: FragLimitText="Frag Limit"
+FragLimitText="	Лимит фрагов"
+; EN: TimeLimitText="Time Limit"
+TimeLimitText="	Лимит времени"
+; EN: GameModeText="Game Mode"
+GameModeText="	Режим игры"
+; EN: GameTypeText="Game Type"
+GameTypeText="	Тип игры"
+; EN: GameVersionText="Game Version"
+GameVersionText="	Версия игры"
+; EN: GameSubVersionText="Game SubVersion"
+GameSubVersionText="	Подверсия игры"
+; EN: WorldLogText="ngStats World Stat-Logging"
+WorldLogText="Глоб. лог ngStats"
+; EN: TrueString="Enabled"
+TrueString="да"
+; EN: FalseString="Disabled"
+FalseString="нет"
+; EN: MapFileString="Map Filename"
+MapFileString="	Карта"
+; EN: DLLString="C++ Library"
+DLLString="Библиотека C++"
+; EN: DLLVerString="%ls (ver %i)"
+DLLVerString="%ls (вер. %i)"
+; EN: WebURLString="Website URL"
+WebURLString="	URL веб-сайта"
+; EN: ServerOSString="Server OS"
+ServerOSString="	ОС сервера"
+; EN: GameClassString="Game Class"
+GameClassString="	Класс игры"
+
+[UBrowserMainClientWindow]
+; EN: FavoritesName="Favorites"
+FavoritesName="Избранные"
+; EN: NewsName="Community News"
+NewsName="Новости сообщества"
+; EN: RecentName="Recent servers"
+RecentName="Посещённые серверы"
+
+[UBrowserServerGrid]
+; EN: ServerName="Server"
+ServerName="Сервер"
+; EN: PingName="Ping"
+PingName="Пинг"
+; EN: MapNameName="Map Name"
+MapNameName="Название карты"
+; EN: PlayersName="Players"
+PlayersName="Игроки"
+; EN: VersionName="Version"
+VersionName="Версия"
+
+[UBrowserInfoMenu]
+; EN: RefreshName="&Refresh Info"
+RefreshName="&Обновить данные"
+; EN: AttachName="&Attach"
+AttachName="&Прикрепить окно"
+; EN: CloseName="&Close"
+CloseName="&Закрыть окно"
+
+[UBrowserMainWindow]
+; EN: WindowTitleString="Unreal Server Browser"
+WindowTitleString="- Обозреватель серверов"
+
+[UBrowserRightClickMenu]
+; EN: RefreshName="&Refresh All Servers"
+RefreshName="Обновить все сервера"
+; EN: FavoritesName="Add to &Favorites"
+FavoritesName="Добавить в избранные"
+; EN: RefreshServerName="&Ping This Server"
+RefreshServerName="Опросить этот сервер"
+; EN: InfoName="&Server and Player Info"
+InfoName="Информация о сервере и игроках"
+; EN: PingAllName="Ping &All Servers"
+PingAllName="Опросить все сервера"
+; EN: RemoveFavoritesName="Remove from &Favorites"
+RemoveFavoritesName="Удалить из избранных"
+; EN: JoinPasswordName="Join with &Password"
+JoinPasswordName="Войти с паролем"
+; EN: JoinServerName="&Join server"
+JoinServerName="Войти на сервер"
+; EN: SpectateServerName="Join as &Spectator"
+SpectateServerName="Войти как зритель"
+; EN: ServerWebsiteName="Show server &Website"
+ServerWebsiteName="Показать веб-сайт сервера"
+; EN: CopyAddressName="&Copy server address"
+CopyAddressName="Скопировать адрес сервера"
+
+[UBrowserPlayerGrid]
+; EN: NameText="Name"
+NameText="Имя"
+; EN: FragsText="Frags"
+FragsText="Фраги"
+; EN: PingText="Ping"
+PingText="Пинг"
+; EN: TeamText="Team"
+TeamText="Команда"
+; EN: MeshText="Mesh"
+MeshText="Модель"
+; EN: SkinText="Skin"
+SkinText="Скин"
+; EN: IDText="ID"
+IDText="ID"
+
+[UBrowserLibPageWindow]
+; EN: DLLTitleStr="Can't connect: Missing Dynamic Link Library %ls."
+DLLTitleStr="Не удалось соединиться: отсутствует библиотека %ls."
+; EN: DLLVerTitleStr="Can't connect: Dynamic Link Library version mismatched %ls."
+DLLVerTitleStr="Не удалось соединиться: версия библиотеки %ls не соответствует требуемой."
+; EN: InfoText[0]="To connect this server you will need additional C++ library %ls."
+InfoText[0]="Для соединения с этим сервером вам нужна дополнительная библиотека C++ %ls."
+; EN: InfoText[1]="For more info view the external info from below (hosted by %ls):"
+InfoText[1]="Дополнительную информацию можно получить в описании ниже (предоставлено %ls):"
+
+[UBrowserConsole]
+; EN: ClassCaption="Unreal Browser Console"
+ClassCaption="Unreal Browser"
+
+[UBrowserOpenBar]
+; EN: OpenText="Open:"
+OpenText="Открыть:"
+; EN: OpenHelp="Enter a standard URL, or select one from the URL history. Press Enter to activate."
+OpenHelp="Введите URL или выберите его из списка ранее использованных. Нажмите Enter для перехода."
+
+[UBrowserServerWebWin]
+; EN: WindowTitle="Unreal Web Explorer"
+WindowTitle="Веб-обозреватель Unreal"
+
+[UBrowserServerWebCW]
+; EN: RefreshString="Refresh page"
+RefreshString="Обновить страницу"

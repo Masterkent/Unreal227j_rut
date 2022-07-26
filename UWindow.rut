@@ -113,7 +113,7 @@ InsertBanTxt="Добавить бан"
 
 [MMMainWindow]
 ; EN: WindowTitle="Music Menu"
-WindowTitle="Музыкальный проигрыватель"
+WindowTitle="Музыка"
 
 [UWindowNetErrorClientWindow]
 ; EN: ReconnectText="Reconnect to server"

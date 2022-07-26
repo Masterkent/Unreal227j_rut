@@ -1328,7 +1328,7 @@ DeathMessage="%k нанёс смертельный урон %o из %w."
 PickupMessage="Вы подобрали ASMD"
 ; EN: ItemName="ASMD"
 ItemName="ASMD"
-FemDeathMessages=""
+FemDeathMessage=""
 FemKillMessage="%k нанесла смертельный урон %o из %w."
 
 [Eightball]
@@ -1338,7 +1338,7 @@ DeathMessage="%k взорвал %o из %w."
 PickupMessage="Вы подобрали Eightball"
 ; EN: ItemName="Eightball"
 ItemName="Eightball"
-FemDeathMessages=""
+FemDeathMessage=""
 FemKillMessage="%k взорвала %o из %w."
 
 [UnrealKeyboardMenu]
@@ -1534,7 +1534,7 @@ DeathMessage="%o был продырявлен %k из %w."
 PickupMessage="Вы подобрали Stinger"
 ; EN: ItemName="Stinger"
 ItemName="Stinger"
-FemDeathMessages="%o была продырявлена %k из %w."
+FemDeathMessage="%o была продырявлена %k из %w."
 FemKillMessage=""
 
 [UnrealCoopGameOptions]
@@ -1600,7 +1600,7 @@ MenuName="Ястреб"
 [UTranslocator]
 ; EN: DeathMessage="%o was telefragged by %k."
 DeathMessage="%o был телефрагнут %k."
-FemDeathMessages="%o была телефрагнута %k."
+FemDeathMessage="%o была телефрагнута %k."
 FemKillMessage=""
 ; EN: PickupMessage="You got the Translocator Source Module"
 PickupMessage="Вы подобрали транслокатор"

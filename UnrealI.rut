@@ -393,13 +393,13 @@ FemKillMessage="%k порвала в клочья %o из %w."
 
 [Rifle]
 ; EN: DeathMessage="%k put a bullet through %o's head."
-DeathMessage="%k засадил пулю в голову %o."
+DeathMessage="%k засадил пулю в %o."
 ; EN: PickupMessage="You got the Rifle"
 PickupMessage="Вы подобрали винтовку"
 ; EN: ItemName="Sniper Rifle"
 ItemName="Sniper Rifle"
 FemDeathMessage=""
-FemKillMessage="%k засадила пулю в голову %o."
+FemKillMessage="%k засадила пулю в %o."
 
 [Minigun]
 ; EN: DeathMessage="%k's %w turned %o into a leaky piece of meat."
